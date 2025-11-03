@@ -92,7 +92,7 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
-}/* --- Image Styling --- */
+}/* ---Image Styling --- */
 .logo-image {
     width: 150px; /* লোগোর আকার পরিবর্তন করতে পারেন */
     height: auto;
@@ -100,60 +100,17 @@ body {
     border-radius: 50%; /* এটিকে গোলাকার করতে */
     border: 3px solid #007bff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}/* --- Analog Clock Styling (কাটা ঘড়ি) --- */
-.clock {
-    width: 200px;
-    height: 200px;
-    background-color: #fff;
-    border: 10px solid #007bff;
-    border-radius: 50%;
-    margin: 30px auto; /* কেন্দ্রে আনতে */
-    position: relative;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-
-.hand {
-    position: absolute;
-    width: 50%;
-    height: 6px;
-    background: #333;
-    top: 50%;
-    transform-origin: 100%;
-    transform: rotate(90deg); /* শুরুতে 12টা বরাবর রাখা */
-    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-}
-
-.hour {
-    width: 30%;
-    height: 6px;
-    background: #007bff; /* নীল */
-    z-index: 3;
-}
-
-.minute {
-    width: 40%;
-    height: 4px;
-    background: #28a745; /* সবুজ */
-    z-index: 2;
-}
-
-.second {
-    width: 45%;
-    height: 2px;
-    background: #dc3545; /* লাল */
-    z-index: 1;
-}
-
-/* কেন্দ্রে পিন */
-.clock:after {
-    content: '';
-    position: absolute;
-    background: #000;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 10;
+}/* --- Digital Clock Styling --- */
+.digital-clock {
+    font-size: 2.5em; /* ঘড়ির আকার */
+    font-weight: bold;
+    color: #ffc107; /* হলুদ রঙ */
+    background-color: #343a40; /* ডার্ক ব্যাকগ্রাউন্ড */
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    border: 2px solid #ffc107;
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.5); /* গ্লো ইফেক্ট */
 }
