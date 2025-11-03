@@ -92,4 +92,12 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+}/* --- Image Styling --- */
+.logo-image {
+    width: 150px; /* লোগোর আকার পরিবর্তন করতে পারেন */
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 50%; /* এটিকে গোলাকার করতে */
+    border: 3px solid #007bff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
